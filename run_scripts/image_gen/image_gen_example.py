@@ -32,7 +32,7 @@ overrides = {"bpe_dir": "../../utils/BPE",
              "vqgan_config_path": "../../checkpoints/vqgan/model.yaml",
              "seed": 7}
 models, cfg, task = checkpoint_utils.load_model_ensemble_and_task(
-    utils.split_paths('../../checkpoints/image_gen.pt'),
+    utils.split_paths('../../checkpoints/image_gen_large_best.pt'),
     arg_overrides=overrides
 )
 task.cfg.sampling_times = 2
