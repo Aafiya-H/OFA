@@ -1,3 +1,6 @@
+.gitignore
 .idea/*
 .DS_Store
 .vscode
+run_scripts/image_gen/m6_unify_result/
+run_scripts/image_gen/*.png
