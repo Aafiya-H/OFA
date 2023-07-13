@@ -694,7 +694,7 @@ class TransformerEncoder(FairseqEncoder):
                     zero_init=True) for _ in range(
                     args.encoder_layers)])
 
-        self.patch_image_size = args.patch_image_size
+        self.patch_image_size = args.code_image_size
         self.orig_patch_image_size = args.orig_patch_image_size
 
         self.register_buffer("token_rp_bucket", token_rp_bucket)
