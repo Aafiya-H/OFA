@@ -3,11 +3,11 @@ from ..ofa_task import OFAConfig, OFATask
 from fairseq.tasks import register_task
 
 @dataclass
-class VisualStorytellingConfig(OFAConfig):
+class StoryContinuationConfig(OFAConfig):
     pass
 
 
-@register_task("visual_storytelling",dataclass=VisualStorytellingConfig)
-class VisualStorytelling(OFATask):
+@register_task("story_continuation",dataclass=StoryContinuationConfig)
+class StoryContinuationTask(OFATask):
     pass
 
